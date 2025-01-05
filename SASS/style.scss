@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+header {
+  background-color: rgba(246, 179, 25, 255);
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 20rem;
+}
+.grid-child {
+  display: flex;
+
+  .logo_img {
+    background: url(../IMG/restaurant-logo_large.png) no-repeat;
+
+    height: 16rem;
+    width: 16rem;
+    align-self: center;
+  }
+  .head-text {
+    position: relative;
+  }
+  .star-text {
+    position: absolute;
+
+    top: 60px;
+    left: 35px;
+  }
+  h1 {
+    font-size: 3.3rem;
+    font-family: "Lora", serif;
+    padding-top: 1.6rem;
+    color: #557c3e;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+  }
+  .text {
+    font-size: 1.8rem;
+  }
+  .navigate {
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    margin-top: 4rem;
+    color: #951c49;
+    a {
+      text-transform: none;
+      text-decoration: none;
+      font-size: 2rem;
+      color: #951c49;
+      margin-right: 3.5rem;
+      padding: 3rem 2rem;
+    }
+    a:hover {
+      background-color: #fff;
+    }
+    .number {
+      font-size: 3rem;
+      text-align: start;
+    }
+    .wetext {
+      color: #557c3e;
+    }
+  }
+}
+.grid-child-1 {
+  padding-left: 5rem;
+}
+
+.grid-child-2 {
+  padding-right: 5rem;
+  justify-self: end;
+}
+
+footer {
+  background-color: #951c49;
+}
